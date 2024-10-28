@@ -28,6 +28,10 @@ ll binpow(ll a, ll b) {
 }
 
 void solve(int t) {
+	//for (int i=0;i<7;i++) {
+	//	cout<<"33"<<'\n';
+	//}
+
 	while (t--) {
 		int n; cin>>n;
 		ll result=1;

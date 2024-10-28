@@ -19,28 +19,28 @@ const double PI = 3.1415926535897932384626;
 void solve(int t) {
 	string temp; getline(cin, temp);
 	while (t--) {
-		string s;
-		getline(cin, s);
+		 string s;
+		 getline(cin, s);
 		
-		string x, y, z;
-		bool space=false, dot=false;
-		for(int i=0;i<s.size();i++) {
-			if(s[i]==' ') {
-				space=true;
-				continue;
-			}
-			if(s[i]=='.') {
-				dot=true;
-				continue;
-			}
-			
-			if(!space) x+=s[i];
-			else if(!dot) y+=s[i];
-			else z+=s[i];
-		}
+		 string x, y, z;
+		 bool space=false, dot=false;
+		 for(size_t i=0;i<s.size();i++) {
+		 	if(s[i]==' ') {
+		 		space=true;
+		 		continue;
+		 	}
+		 	if(s[i]=='.') {
+		 		dot=true;
+		 		continue;
+		 	}
+		  
+		 	if(!space) x+=s[i];
+		 	else if(!dot) y+=s[i];
+		 	else z+=s[i];
+		 }
 		
-		int a=stoll(x, nullptr, 10), b=stoll(y, nullptr, 10), c=stoll(z, nullptr, 10);
-		cout<<a+c<<'.'<<a+b<<'\n';
+		 int a=stoll(x, nullptr, 10), b=stoll(y, nullptr, 10), c=stoll(z, nullptr, 10);
+		 cout<<a+c<<'.'<<a+b<<'\n';
 	}
 }
 
