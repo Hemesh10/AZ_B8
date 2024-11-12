@@ -26,7 +26,7 @@ struct range_maintenance {
         }
         cout<<'\n';
     }
-    
+
     void insert_range(int l, int r) {
         auto it = _ranges.upper_bound({l, 1e9});
         if(it != _ranges.begin()) {
